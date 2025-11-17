@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Свадебное приглашение</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Arial", sans-serif;
+      color: #333;
+      background: #fefcf9;
+      overflow-x: hidden;
+    }
+    .hero {
+      position: relative;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 3rem;
+      z-index: 10;
+      text-shadow: 0 2px 15px rgba(0,0,0,0.6);
+    }
+    .hero .bg-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      animation: moveBackground 30s linear infinite;
+      z-index: 1;
+      filter: brightness(0.7);
+    }
+    @keyframes moveBackground {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-20px); }
+      100% { transform: translateY(0px); }
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+    h2 {
+      font-weight: normal;
+      margin-top: 40px;
+      font-size: 2rem;
+      position: relative;
+    }
+    .date-block {
+      background: linear-gradient(135deg, #fff9f5, #fce8e3);
+      border: 2px solid #e7c5b7;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      font-size: 1.6rem;
+      font-family: 'Georgia', serif;
+      letter-spacing: 1px;
+      margin-top: 20px;
+      position: relative;
+      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+    .date-block .date {
+      font-size: 2.4rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .map-block {
+      margin-top: 20px;
+      padding: 15px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      border: 1px solid #f0e4df;
+      position: relative;
+    }
+    .map-block .title {
+      font-size: 1.3rem;
+      font-family: 'Georgia', serif;
+      color: #c47b6c;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .map-block iframe {
+      border-radius: 12px;
+      margin-top: 10px;
+    }
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="bg-animation"></div>
+    <h1>Евгений и Валерия приглашают вас на свадьбу</h1>
+  </section>
+
+  <div class="container">
+    <h2>Дорогие друзья и близкие!</h2>
+    <p>
+      С радостью приглашаем вас отпраздновать с нами самый важный день — день нашей свадьбы.
+    </p>
+
+    <div class="date-block">
+      <div class="date">29 апреля 2026</div>
+      <div style="font-size: 1.2rem;">
+        <strong>Место:</strong> "Дом у моря", с. Кабардинка <br>
+        <a href="https://yandex.ru/maps/-/CLGWJFy1" target="_blank" style="color: #fff; text-decoration: underline;">Открыть локацию на Яндекс.Картах</a>
+      </div>
+    </div>
+
+    <div class="map-block">
+      <div class="title">Локация</div>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CLGWJFy1" width="100%" height="320" frameborder="0" allowfullscreen="true"></iframe>
+    </div>
+
+    <h2>Программа</h2>
+    <p>
+      — Сбор гостей<br>
+      — Торжественная церемония<br>
+      — Праздничный ужин и танцы
+    </p>
+
+    <h2>Пожалуйста, подтвердите присутствие</h2>
+    <p>Напишите нам: <strong>+7 (000) 000-00-00</strong></p>
+
+    <div class="footer">С любовью, Евгений и Валерия ♥</div>
+  </div>
+
+</body>
+</html>
